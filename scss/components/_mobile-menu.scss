@@ -1,0 +1,144 @@
+.menu-button {
+  position: absolute;
+  top: 22px;
+  right: 23px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 16px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin-left: auto;
+  cursor: pointer;
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $blue-color;
+  }
+  
+  &__icon {
+    fill: currentColor;
+  }
+
+@media screen and (min-width: 768px) {
+    display: none;
+}
+}
+
+.menu.is-open {
+  transform: translateX(0);
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: $white-color;
+  z-index: 100;
+  transform: translateX(100%);
+  transition: transform 250ms $timing-function;
+
+@media screen and (min-width: 768px) {
+    display: none;
+}
+
+  &-close__button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: $black-text-color;
+  transition: color 250ms $timing-function;
+
+      &:hover,
+      &:focus {
+        color: $blue-color;}
+}
+
+  &-close__icon {
+  fill: currentColor;
+}
+}
+
+
+.mobile {
+
+&__nav {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  padding: 48px 40px;
+}
+
+&__list {
+  
+  &:first-child {
+    margin-bottom: auto;
+  }
+
+  &:nth-child(2) {
+    margin-bottom: 64px;
+  }
+}
+
+&__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+&__link {
+  text-decoration: none;
+  color: currentColor;
+  font-size: 40px;
+  line-height: calc(47 / 40);
+
+  &--current {
+    color: $blue-color;
+  }
+}
+
+&-contacts__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+&-contacts__link-tel {
+  font-size: 34px;
+  line-height: calc(40 / 34);
+  color: $blue-color;
+}
+
+&-contacts__link-mail {
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  color: $grey-color;
+}
+
+&-socials__link {
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  color: $blue-color;
+}
+
+&-socials__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+&-socials__item:not(:last-child) 
+&-socials__link {
+  display: flex;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+} 
+}

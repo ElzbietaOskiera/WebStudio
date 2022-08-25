@@ -1,0 +1,159 @@
+.header {
+  border-bottom: 1px solid $headerBorder;
+
+&__container {
+  display: flex;
+  align-items: center;
+}
+
+&-nav {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header-nav {
+    display: flex;
+    margin-right: auto;
+    align-items: center;
+  }
+}
+
+&-nav__link {
+  text-decoration: none;
+  color: currentColor;
+  font-weight: 500;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $blue-color;
+  }
+
+  &--current {
+    color: $blue-color;
+    position: relative;
+  }
+
+  &--current::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $blue-color;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+&-nav__list {
+  display: flex;
+  gap: 50px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+&-contact {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 84px;
+  gap: 10px;
+
+  @media screen and (min-width: 1200px) {
+    gap: 30px;
+  }
+
+&__link {
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+&__icon {
+  fill: currentColor;
+  margin-right: 8px;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+  }
+}
+
+&__icon-mail {
+  width: 16px;
+  height: 12px;
+}
+&__icon-phone {
+  width: 10px;
+  height: 16px;
+}
+
+&__mail {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.02em;
+  color: $grey-color;
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $blue-color;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(16 / 14);
+  }
+}
+
+&__phone {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+
+  letter-spacing: 0.02em;
+  color: $grey-color;
+
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $blue-color;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(16 / 14);
+  }
+}
+}
+}
