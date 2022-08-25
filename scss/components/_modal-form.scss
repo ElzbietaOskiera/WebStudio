@@ -189,7 +189,7 @@
   border-radius: 4px;
   background: $blue-color;
   border: $blue-color;
-  margin-left: 164px;
+  margin-left: 125px;
   text-align: center;
   align-items: center;
   font-weight: 700;
@@ -198,6 +198,10 @@
   color: $white-color;
   letter-spacing: 0.06em;
   cursor: pointer;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 164px;
+  }
   }
 }
 
