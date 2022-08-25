@@ -568,76 +568,91 @@
 
     <!-- Modal window -->
 
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button class="modal-button" data-modal-close>
-          <svg class="modal-button__icon" width="14" height="14">
-            <use href="./images/icons.svg#close-black"></use>
+    <div class="modal is-hidden" data-modal>
+      <section class="modal__content">
+        <button class="modal__exit" data-modal-close>
+          <svg width="11" height="11">
+            <use href="/images/icons.svg#x-icon"></use>
           </svg>
         </button>
-
-        <form class="form__modal">
-          <strong class="form__title">Zostaw swoje dane w formularzu poniżej</strong>
-          <div class="form__group" role="group">
-            <label class="form__field" autocomplet="off">
-              <span class="form__label">Imie</span>
-              <input class="form__input" type="text" name="name" placeholder=" " required />
-
-              <svg class="form__icon" width="18" height="18">
-                <use href="./images/icons.svg#person-black"></use>
-              </svg>
-            </label>
-
-            <label class="form__field" autocomplet="off">
-              <span class="form__label">Telefon</span>
-              <input class="form__input" type="tel" name="tel" placeholder=" " required />
-
-              <svg class="form__icon" width="18" height="18">
-                <use href="./images/icons.svg#phone-black"></use>
-              </svg>
-            </label>
-
-            <label class="form__field" autocomplet="off">
-              <span class="form__label">Email</span>
-              <input class="form__input" type="email" name="email" placeholder=" " required />
-
-              <svg class="form__icon" width="18" height="18">
-                <use href="./images/icons.svg#email-black"></use>
-              </svg>
-            </label>
-
-            <label class="form__field" autocomplet="off">
-              <span class="form__label">Komentarz</span>
-              <textarea
-                class="form__comment"
-                name="comment"
-                rows="6"
-                placeholder="Wprowadź tekst"               
-              ></textarea>
-            </label>
-          </div>
-
-          <label class="policy__label">
-            <input
-              class="policy__checkbox visually-hidden"
-              type="checkbox"
-              name="agreement"
-              required
-            />
-            <svg class="policy__icon" width="16" height="15">
-              <use class="policy__icon-uncheck" href="./images/icons.svg#icon-unchek"></use>
-              <use class="policy__icon-check" href="./images/icons.svg#icon-check"></use>
-            </svg>
-            <span class="policy__text"
-            >Oświadczam iż akceptuję <a class="policy__link" href="#">Regulamin</a> i
-                    <a class="policy__link" href="#">Politykę prywatności.</a>
-            </span>
-          </label>
-
-          <button class="form__button" type="submit">Wyślij</button>
-        </form>
-      </div>
-    </div> 
+        <h2 class="modal__header">Zostaw swoje dane w formularzu poniżej</h2>
+        <div class="modal__form">
+          <form name="modal-form">
+            <ul>
+              <li class="modal__item">
+                <label class="modal__label" for="modal-username"><span>Imie</span></label>
+                <svg class="modal__icon" width="12" height="12">
+                  <use
+                    href="/images/icons.svg#name-icon"
+                  ></use>
+                </svg>
+                <input
+                  class="modal__input"
+                  type="text"
+                  id="modal-username"
+                  name="username"
+                />
+              </li>
+              <li class="modal__item">
+                <label class="modal__label" for="modal-phone-number"><span>Telefon</span></label
+                ><svg class="modal__icon" width="13" height="13">
+                  <use
+                    href="/images/icons.svg#phone-black-icon"
+                  ></use></svg>
+                <input
+                  class="modal__input"
+                  type="tel"
+                  id="modal-phone-number"
+                  name="phone-number"
+                />
+              </li>
+              <li class="modal__item">
+                <label class="modal__label" for="modal-email"><span>Email</span></label
+                ><svg class="modal__icon" width="15" height="12">
+                  <use
+                    href="/images/icons.svg#email-black-icon"
+                  ></use></svg>
+                <input
+                  class="modal__input"
+                  type="email"
+                  id="modal-email"
+                  name="email"
+                />
+              </li>
+              <li class="modal__item">
+                <label class="modal__label" for="modal-comment"><span>Komentarz</span></label
+                ><textarea
+                  class="modal__textarea"
+                  id="modal-comment"
+                  placeholder="Wprowadź tekst"
+                  name="comment"
+                ></textarea>
+              </li>
+              <li class="modal__checkbox-item">
+                <div class="modal__checkbox-div">
+                  <input
+                    class="modal__checkbox"
+                    id="checkbox"
+                    type="checkbox"
+                    name="checkbox"
+                  />
+                  <svg class="modal__checkbox-svg" width="11" height="8">
+                    <use
+                      href="/images/icons.svg#checkbox-vector"
+                    ></use>
+                  </svg>
+                </div>
+                <label class="modal__label"
+                  ><p class="modal__checkbox-text"
+                    >Oświadczam iż akceptuję <a class="modal__link" href="#">Regulamin</a> i
+                    <a class="modal__link" href="#">Politykę prywatności.</a></p
+                  ></label>
+              </li>
+              <li><button class="modal__button" type="submit">Wyślij</button></li>
+            </ul>
+          </form>
+        </section>
+        </div>
 
     <!-- Mobile menu -->
 
