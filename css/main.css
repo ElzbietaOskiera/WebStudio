@@ -11,16 +11,6 @@ body {
   font-family: "Roboto", "Raleway", sans-serif;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-}
-
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -41,6 +31,16 @@ img {
   .container {
     width: 1200px;
   }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .nav__logo {
@@ -285,10 +285,16 @@ img {
   opacity: 1;
 }
 .modal__checkbox-text {
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
   color: #757575;
+}
+@media screen and (min-width: 1200px) {
+  .modal__checkbox-text {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 .modal__link {
   color: #2196f3;
@@ -847,7 +853,9 @@ img {
   }
 }
 .description__text {
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   color: #757575;
 }
 @media screen and (min-width: 768px) {
@@ -1339,6 +1347,7 @@ img {
   }
 }
 .portfolio__button {
+  text-align: center;
   cursor: pointer;
   border-radius: 4px;
   padding: 6px 22px;
@@ -1353,6 +1362,19 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 768px) {
+  .portfolio__button--one, .portfolio__button--four {
+    width: 103px;
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+  .portfolio__button--two, .portfolio__button--five {
+    width: 128px;
+  }
+  .portfolio__button--three {
+    width: 145px;
+  }
 }
 .portfolio__button:hover, .portfolio__button:focus {
   background-color: #2196f3;
@@ -1444,7 +1466,7 @@ img {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
   color: #212121;
   margin-bottom: 4px;
 }
