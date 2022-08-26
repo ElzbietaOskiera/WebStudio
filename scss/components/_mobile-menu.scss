@@ -18,12 +18,10 @@
   &:focus {
     color: $blue-color;
   }
-  
-  &__icon {
+&__icon {
     fill: currentColor;
-  }
-
-@media screen and (min-width: 768px) {
+}
+  @media screen and (min-width: 768px) {
     display: none;
 }
 }
@@ -44,11 +42,10 @@
   transform: translateX(100%);
   transition: transform 250ms $timing-function;
 
-@media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     display: none;
 }
-
-  &-close__button {
+&-close__button {
   position: absolute;
   top: 10px;
   right: 15px;
@@ -64,12 +61,10 @@
       &:focus {
         color: $blue-color;}
 }
-
-  &-close__icon {
+&-close__icon {
   fill: currentColor;
 }
 }
-
 
 .mobile {
 
@@ -80,22 +75,18 @@
   letter-spacing: 0.02em;
   padding: 48px 40px;
 }
-
 &__list {
   
   &:first-child {
     margin-bottom: auto;
   }
-
   &:nth-child(2) {
     margin-bottom: 64px;
   }
 }
-
 &__item:not(:last-child) {
   margin-bottom: 32px;
 }
-
 &__link {
   text-decoration: none;
   color: currentColor;
@@ -106,7 +97,6 @@
     color: $blue-color;
   }
 }
-
 &-contacts__item:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -115,26 +105,22 @@
   line-height: calc(40 / 34);
   color: $blue-color;
 }
-
 &-contacts__link-mail {
   font-size: 24px;
   line-height: calc(28 / 24);
   color: $grey-color;
 }
-
 &-socials__link {
   font-size: 18px;
   line-height: calc(22 / 18);
   color: $blue-color;
 }
-
 &-socials__list {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
-
 &-socials__item:not(:last-child) 
 &-socials__link {
   display: flex;

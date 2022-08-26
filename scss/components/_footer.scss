@@ -14,18 +14,15 @@
     justify-content: space-around;
     align-items: baseline;
   }
-
   @media screen and (min-width: 1200px) {
     text-align: start;
     gap: 70px;
   }
 }
-
 &__address {
-    font-style: normal;
-    margin-top: 20px;
-  }
-
+  font-style: normal;
+  margin-top: 20px;
+}
 &__link {
   line-height: calc(24 / 14);
   color: $white-color;
@@ -36,7 +33,6 @@
     color: $blue-color;
   }
 }
-
 &__item {
   margin-bottom: 9px;
 
@@ -44,7 +40,6 @@
     margin-bottom: 0;
   }
 }
-
 &__mail {
   line-height: calc(24 / 14);
   color: $footerContact;
@@ -55,7 +50,6 @@
     color: $blue-color;
   }
 }
-
 &__phone {
   line-height: calc(24 / 14);
   color: $footerContact;
@@ -66,7 +60,6 @@
     color: $blue-color;
   }
 }
-
 &-form__field {
   display: flex;
   flex-wrap: wrap;
@@ -76,13 +69,11 @@
     flex-direction: column;
     align-items: center;
   }
-
   @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
     flex-direction: row;
   }
 }
-
 &-form__input {
   width: 100%;
   padding: 14px 16px;    
@@ -99,14 +90,12 @@
   @media screen and (min-width: 768px) {
     width: 450px;
   }
-
   @media screen and (min-width: 1200px) {
     width: 358px;
     margin-right: 12px;  
     margin-bottom: 0;
   }
 }
-
 &__button {
   cursor: pointer;
   border-radius: 4px;
@@ -131,7 +120,6 @@
     background-color: #188ce8;
   }
 }
-
 &__button-icon {
   fill: $white-color;
   margin-left: 10px;
@@ -147,14 +135,12 @@
   color: $white-color;
   margin-bottom: 20px;
 }
-
 &__list {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
 }
-
 &__link {
   display: flex;
   justify-content: center;

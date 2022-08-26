@@ -6,28 +6,22 @@
     padding-top: 94px;
     padding-bottom: 94px;
   } 
-
-
 &__list {
-
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   align-items: center;
 }
-
 &__item {
   flex-basis: calc((100% - 30px * (1 - 1)) / 1);
 
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 30px * (2 - 1)) / 2);
   }
-
   @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 30px * (4 - 1)) / 4);
   }
 }
-
 &__svg {
   display: flex;
   align-items: center;
@@ -41,12 +35,10 @@
   @media screen and (min-width: 768px) {
     width: 354px;
   }
-
   @media screen and (min-width: 1200px) {
     width: 270px;
   }
 }
-
 &__title {
   font-weight: 700;
   font-size: 14px;

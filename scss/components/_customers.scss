@@ -6,7 +6,6 @@
     padding-top: 94px;
     padding-bottom: 94px;
   }  
-
 &__header {
   font-weight: 700;
   font-size: 28px;
@@ -21,7 +20,6 @@
     margin-bottom: 50px;
   }
 }
-
 &__list {
   display: flex;
   flex-wrap: wrap;
@@ -29,7 +27,6 @@
   align-items: center;
   gap: 30px;
 }
-
 &__link {
   display: flex;
   width: 210px;
@@ -39,7 +36,6 @@
   border: 1px solid $svgGreyFill;
   border-radius: 4px;
   color: $svgGreyFill;
-
   transition: color 250ms $timing-function, border-color 250ms $timing-function;
 
   &:hover,
@@ -51,7 +47,6 @@
   @media screen and (min-width: 768px) {
     width: 226px;
   }
-
   @media screen and (min-width: 1200px) {
     width: 170px;
   }
